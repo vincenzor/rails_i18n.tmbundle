@@ -60,6 +60,7 @@ class AddTranslation
     if file
       file.gsub!('.html.erb', '')
       file.gsub!('.html.haml', '')
+      file.gsub!('.rb', '')
       file.gsub!(/^[_]/, '')
     else
       # If controller
